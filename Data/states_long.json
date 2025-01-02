@@ -1,0 +1,332 @@
+[
+    {
+        "state_id": 0,
+        "state_name": "Alabama",
+        "state_abbrev": "AL",
+        "fips": "01"
+    },
+    {
+        "state_id": 1,
+        "state_name": "Alaska",
+        "state_abbrev": "AK",
+        "fips": "02"
+    },
+    {
+        "state_id": 2,
+        "state_name": "Arizona",
+        "state_abbrev": "AZ",
+        "fips": "04"
+    },
+    {
+        "state_id": 3,
+        "state_name": "Arkansas",
+        "state_abbrev": "AR",
+        "fips": "05"
+    },
+    {
+        "state_id": 4,
+        "state_name": "California",
+        "state_abbrev": "CA",
+        "fips": "06"
+    },
+    {
+        "state_id": 5,
+        "state_name": "Colorado",
+        "state_abbrev": "CO",
+        "fips": "08"
+    },
+    {
+        "state_id": 6,
+        "state_name": "Connecticut",
+        "state_abbrev": "CT",
+        "fips": "09"
+    },
+    {
+        "state_id": 7,
+        "state_name": "Delaware",
+        "state_abbrev": "DE",
+        "fips": "10"
+    },
+    {
+        "state_id": 8,
+        "state_name": "Florida",
+        "state_abbrev": "FL",
+        "fips": "12"
+    },
+    {
+        "state_id": 9,
+        "state_name": "Georgia",
+        "state_abbrev": "GA",
+        "fips": "13"
+    },
+    {
+        "state_id": 10,
+        "state_name": "Hawaii",
+        "state_abbrev": "HI",
+        "fips": "15"
+    },
+    {
+        "state_id": 11,
+        "state_name": "Idaho",
+        "state_abbrev": "ID",
+        "fips": "16"
+    },
+    {
+        "state_id": 12,
+        "state_name": "Illinois",
+        "state_abbrev": "IL",
+        "fips": "17"
+    },
+    {
+        "state_id": 13,
+        "state_name": "Indiana",
+        "state_abbrev": "IN",
+        "fips": "18"
+    },
+    {
+        "state_id": 14,
+        "state_name": "Iowa",
+        "state_abbrev": "IA",
+        "fips": "19"
+    },
+    {
+        "state_id": 15,
+        "state_name": "Kansas",
+        "state_abbrev": "KS",
+        "fips": "20"
+    },
+    {
+        "state_id": 16,
+        "state_name": "Kentucky",
+        "state_abbrev": "KY",
+        "fips": "21"
+    },
+    {
+        "state_id": 17,
+        "state_name": "Louisiana",
+        "state_abbrev": "LA",
+        "fips": "22"
+    },
+    {
+        "state_id": 18,
+        "state_name": "Maine",
+        "state_abbrev": "ME",
+        "fips": "23"
+    },
+    {
+        "state_id": 19,
+        "state_name": "Maryland",
+        "state_abbrev": "MD",
+        "fips": "24"
+    },
+    {
+        "state_id": 20,
+        "state_name": "Massachusetts",
+        "state_abbrev": "MA",
+        "fips": "25"
+    },
+    {
+        "state_id": 21,
+        "state_name": "Michigan",
+        "state_abbrev": "MI",
+        "fips": "26"
+    },
+    {
+        "state_id": 22,
+        "state_name": "Minnesota",
+        "state_abbrev": "MN",
+        "fips": "27"
+    },
+    {
+        "state_id": 23,
+        "state_name": "Mississippi",
+        "state_abbrev": "MS",
+        "fips": "28"
+    },
+    {
+        "state_id": 24,
+        "state_name": "Missouri",
+        "state_abbrev": "MO",
+        "fips": "29"
+    },
+    {
+        "state_id": 25,
+        "state_name": "Montana",
+        "state_abbrev": "MT",
+        "fips": "30"
+    },
+    {
+        "state_id": 26,
+        "state_name": "Nebraska",
+        "state_abbrev": "NE",
+        "fips": "31"
+    },
+    {
+        "state_id": 27,
+        "state_name": "Nevada",
+        "state_abbrev": "NV",
+        "fips": "32"
+    },
+    {
+        "state_id": 28,
+        "state_name": "New Hampshire",
+        "state_abbrev": "NH",
+        "fips": "33"
+    },
+    {
+        "state_id": 29,
+        "state_name": "New Jersey",
+        "state_abbrev": "NJ",
+        "fips": "34"
+    },
+    {
+        "state_id": 30,
+        "state_name": "New Mexico",
+        "state_abbrev": "NM",
+        "fips": "35"
+    },
+    {
+        "state_id": 31,
+        "state_name": "New York",
+        "state_abbrev": "NY",
+        "fips": "36"
+    },
+    {
+        "state_id": 32,
+        "state_name": "North Carolina",
+        "state_abbrev": "NC",
+        "fips": "37"
+    },
+    {
+        "state_id": 33,
+        "state_name": "North Dakota",
+        "state_abbrev": "ND",
+        "fips": "38"
+    },
+    {
+        "state_id": 34,
+        "state_name": "Ohio",
+        "state_abbrev": "OH",
+        "fips": "39"
+    },
+    {
+        "state_id": 35,
+        "state_name": "Oklahoma",
+        "state_abbrev": "OK",
+        "fips": "40"
+    },
+    {
+        "state_id": 36,
+        "state_name": "Oregon",
+        "state_abbrev": "OR",
+        "fips": "41"
+    },
+    {
+        "state_id": 37,
+        "state_name": "Pennsylvania",
+        "state_abbrev": "PA",
+        "fips": "42"
+    },
+    {
+        "state_id": 38,
+        "state_name": "Rhode Island",
+        "state_abbrev": "RI",
+        "fips": "44"
+    },
+    {
+        "state_id": 39,
+        "state_name": "South Carolina",
+        "state_abbrev": "SC",
+        "fips": "45"
+    },
+    {
+        "state_id": 40,
+        "state_name": "South Dakota",
+        "state_abbrev": "SD",
+        "fips": "46"
+    },
+    {
+        "state_id": 41,
+        "state_name": "Tennessee",
+        "state_abbrev": "TN",
+        "fips": "47"
+    },
+    {
+        "state_id": 42,
+        "state_name": "Texas",
+        "state_abbrev": "TX",
+        "fips": "48"
+    },
+    {
+        "state_id": 43,
+        "state_name": "Utah",
+        "state_abbrev": "UT",
+        "fips": "49"
+    },
+    {
+        "state_id": 44,
+        "state_name": "Vermont",
+        "state_abbrev": "VT",
+        "fips": "50"
+    },
+    {
+        "state_id": 45,
+        "state_name": "Virginia",
+        "state_abbrev": "VA",
+        "fips": "51"
+    },
+    {
+        "state_id": 46,
+        "state_name": "Washington",
+        "state_abbrev": "WA",
+        "fips": "53"
+    },
+    {
+        "state_id": 47,
+        "state_name": "West Virginia",
+        "state_abbrev": "WV",
+        "fips": "54"
+    },
+    {
+        "state_id": 48,
+        "state_name": "Wisconsin",
+        "state_abbrev": "WI",
+        "fips": "55"
+    },
+    {
+        "state_id": 49,
+        "state_name": "Wyoming",
+        "state_abbrev": "WY",
+        "fips": "56"
+    },
+    {
+        "state_id": 50,
+        "state_name": "American Samoa",
+        "state_abbrev": "AS",
+        "fips": "60"
+    },
+    {
+        "state_id": 51,
+        "state_name": "Guam",
+        "state_abbrev": "GU",
+        "fips": "66"
+    },
+    {
+        "state_id": 52,
+        "state_name": "Northern Mariana Islands",
+        "state_abbrev": "MP",
+        "fips": "69"
+    },
+    {
+        "state_id": 53,
+        "state_name": "Puerto Rico",
+        "state_abbrev": "PR",
+        "fips": "72"
+    },
+    {
+        "state_id": 54,
+        "state_name": "Virgin Islands",
+        "state_abbrev": "VI",
+        "fips": "78"
+    }
+]
