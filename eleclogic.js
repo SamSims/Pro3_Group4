@@ -11,10 +11,37 @@ let myMap = L.map("elecmap", {
 
 function colordist(response){
 // color each district based on amount of votes each cantidate got.
-return {color:"#ff0000",
+d3.json("./Data/election_results_by_district.json").then(function (data) {
+let distloc = data.filter(function(d){return d.state_fips===response.properties.STATEFP&&d.Congressional_District===response.properties.NAMELSAD&&d.Year===parseInt(year);})
+if(distloc.District_rep_votes === undefined){
+  console.log("Undefined")
+  return {color:"#00ff00",
   weight:3,
   fillOpacity: 0.6
+}}else{
+// console.log(response.properties.STATEFP)
+// console.log(response.properties.NAMELSAD)
+// console.log(distloc);
+// console.log(distloc[0].District_dem_votes)
+// console.log(typeof(distloc[0].District_rep_votes))
+if(distloc[0].District_rep_votes >= distloc[0].District_dem_votes){
+  console.log("Republican")
+  return {color:"#ff0000",
+    weight:3,
+    fillOpacity: 0.6}
 }
+else{
+  console.log("Democrat")
+  return {color:"#0000ff",
+    weight:3,
+    fillOpacity: 0.6
+  }  
+}}
+});
+// return {color:"#ff0000",
+//   weight:3,
+//   fillOpacity: 0.6
+// }
 }
 function onEachFeature(feature,layer){
   layer.bindPopup(feature.properties.NAMELSAD)
