@@ -13,6 +13,7 @@ function createslider(year){
 electoraltotal = 0
 electoraldem = 0
 electoralrep = 0
+actualresults ={"2016":{"Democrat":227,"Republican":304},"2020":{"Democrat":306,"Republican":232}}
 d3.json("./Data/election_results_by_district.json").then(function (response) {
   d3.json("./Data/election_results_by_state.json").then(function (data) {
     console.log(data)
@@ -33,7 +34,25 @@ d3.json("./Data/election_results_by_district.json").then(function (response) {
     slider = document.getElementById("myRange")
     slider.setAttribute("max",(electoraldem+electoralrep))
     slider.setAttribute("value",electoraldem)
+    slider1 = document.getElementById("myRange1")
+    slider1.setAttribute("max",(actualresults[year].Democrat+actualresults[year].Republican))
+    slider1.setAttribute("value",actualresults[year].Democrat)
+
+    tempSliderValue = slider.value;
+    
+    const progress = (tempSliderValue / slider.max) * 100;
+    
+    slider.style.background = `linear-gradient(to right, #0000ff ${progress}%, #ff0000 ${progress}%)`;
+
+    tempSliderValue1 = slider1.value;
+    
+    const progress1 = (tempSliderValue1 / slider1.max) * 100;
+    
+    slider1.style.background = `linear-gradient(to right, #0000ff ${progress1}%, #ff0000 ${progress1}%)`;
+    
+
     document.getElementById('valueDisplay').innerHTML = `Democrat Votes:${electoraldem} Republican Votes:${electoralrep}`;
+    document.getElementById('valueDisplay1').innerHTML = `Democrat Votes:${actualresults[year].Democrat} Republican Votes:${actualresults[year].Republican}`;
 
   });
 });
@@ -59,7 +78,7 @@ if(response.properties["WINNER"] ==="Unknown"){
 }};
 
 function onEachFeature(feature,layer){
-  layer.bindPopup(feature.properties.NAMELSAD)
+  layer.bindPopup(`${feature.properties.NAMELSAD}<br>District Democratic Votes: ${feature.properties.DEMVOTES}<br>District Republican Votes: ${feature.properties.REPVOTES}`)
   layer.on({
     // When a user's mouse cursor touches a map feature, the mouseover event calls this function, which makes that feature's opacity change to 90% so that it stands out.
     mouseover: function(event) {
