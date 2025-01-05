@@ -1,6 +1,7 @@
 let maploc = "./Data/Geojson/RevConDistricts";
 let year = "2016";
 
+let overlayMaps = {}
 
 
 
@@ -73,9 +74,33 @@ function colordist(response) {
     return {
       color: "#00ff00",
       weight: 3,
-      fillOpacity: 0.6
+      fillOpacity: 0.3
     }
   } else if (response.properties["WINNER"] === "Democrat") {
+    return {
+      color: "#0000ff",
+      weight: 3,
+      fillOpacity: 0.3
+    }
+  } else {
+    return {
+      color: "#ff0000",
+      weight: 3,
+      fillOpacity: 0.3
+    }
+  }
+};
+
+function colorstate(response) {
+  // color each district based on amount of votes each cantidate got.
+  if (response.properties["STATEWINNER"] === "Unknown") {
+
+    return {
+      color: "#00ff00",
+      weight: 3,
+      fillOpacity: 0.6
+    }
+  } else if (response.properties["STATEWINNER"] === "Democrat") {
     return {
       color: "#0000ff",
       weight: 3,
@@ -129,22 +154,26 @@ function init() {
   let distmap = maploc + "2016" + ".geojson"
   d3.json(distmap).then(function (response) {
     console.log(response)
+    let state2016 =L.geoJSON(response, { style: colorstate, onEachFeature: onEachFeature })
     let elec2016 = L.geoJSON(response, { style: colordist, onEachFeature: onEachFeature })
 
     let distmap1 = maploc + "2020" + ".geojson"
     d3.json(distmap1).then(function (data) {
+      let state2020 = L.geoJSON(data, { style: colorstate, onEachFeature: onEachFeature })
       let elec2020 = L.geoJSON(data, { style: colordist, onEachFeature: onEachFeature })
 
-      let overlayMaps = {
+      overlayMaps = {
         "2016 Election": elec2016,
-        "2020 Election": elec2020
+        "2016 Election by State": state2016,
+        "2020 Election": elec2020,
+        "2020 Election by State": state2020
       };
       let myMap = L.map("elecmap", {
         center: [
           30.09, -95.71
         ],
         zoom: 4,
-        layers: [street, elec2016]
+        layers: [street, state2016, elec2016]
       });
       L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
