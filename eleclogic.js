@@ -1,5 +1,5 @@
 let maploc = "./Data/Geojson/RevConDistricts";
-let year = "2020";
+let year = "2016";
 let distmap = maploc + year + ".geojson"
 
 let myMap = L.map("elecmap", {
