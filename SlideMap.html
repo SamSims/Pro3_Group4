@@ -24,14 +24,18 @@
 </head>
 
 <body>
-  <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
-  <!-- The div where we'll insert our map -->
+  <!-- The div where we'll insert our district slider -->
   <div id="slidecontainer"><input type="range" min="0" max="500" value="50" class="slider" id="myRange" disabled></div>
+  <!-- display actual vote numbers -->
   <p id="valueDisplay">50</p>
+  <!-- The div where we'll insert our actual election slider --> 
   <div id="slidecontainer1"><input type="range" min="0" max="500" value="50" class="slider" id="myRange1" disabled></div>
+  <!-- display actual vote numbers --> 
   <p id="valueDisplay1">50</p>
+  <!-- div for the dropdown box to change elections -->   
   <div><select id="elecsel" onchange="optionChanged(this.value)"></select></div>
   <br>
+<!-- The div where we'll insert our map -->
   <div id="elecmap"></div>
 
   <!-- JavaScript files -->
