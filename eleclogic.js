@@ -91,7 +91,7 @@ function colordist(response) {
 };
 
 function onEachFeature(feature, layer) {
-  layer.bindPopup(`${feature.properties.NAMELSAD}<br>District Democratic Votes: ${feature.properties.DEMVOTES}<br>District Republican Votes: ${feature.properties.REPVOTES}`)
+  layer.bindPopup(`<h1>${feature.properties.STATENAME}</h1><br>${feature.properties.NAMELSAD}<br>State Democratic Votes: ${feature.properties.STATEDEMVOTES}<br>State Republican Votes: ${feature.properties.STATEREPVOTES}<br>District Democratic Votes: ${feature.properties.DEMVOTES}<br>District Republican Votes: ${feature.properties.REPVOTES}`)
   layer.on({
     // When a user's mouse cursor touches a map feature, the mouseover event calls this function, which makes that feature's opacity change to 90% so that it stands out.
     mouseover: function (event) {
@@ -128,7 +128,7 @@ function init() {
   createslider(year);
   let distmap = maploc + "2016" + ".geojson"
   d3.json(distmap).then(function (response) {
-
+    console.log(response)
     let elec2016 = L.geoJSON(response, { style: colordist, onEachFeature: onEachFeature })
 
     let distmap1 = maploc + "2020" + ".geojson"
