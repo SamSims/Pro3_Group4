@@ -111,7 +111,9 @@ function onEachFeature(feature, layer) {
 }
 
 function init() {
-
+  let dropdown =d3.select("#elecsel");
+  dropdown.append("option").text(`2016 Election`).property("value", "2016");
+  dropdown.append("option").text(`2020 Election`).property("value", "2020");
 
   let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -139,14 +141,18 @@ function init() {
       };
       let myMap = L.map("elecmap", {
         center: [
-          37.09, -95.71
+          30.09, -95.71
         ],
-        zoom: 5,
+        zoom: 4,
         layers: [street, elec2016]
       });
       L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
     });
   });
+}
+
+function optionChanged(newyear) {
+createslider(newyear);
 }
 init();
