@@ -34,12 +34,12 @@ The html will not run on Git because the GeoJSONs were too large to add to Git.
    
    Options: We considered the other extreme of looking at the data from a National Popular Vote POV (readily available); we opted to look at the district level (higher level of complexity and detail).
    
-	1. Ethical Conversations: 
+	2. Ethical Conversations: 
    2016 Election – PA data missing from one of the biggest contested states from 2016 election 
    
    2020 Election – The power of realizing 'it’s all how you look at that data.' Had the 2020 election used proportional district totals instead of the Electoral college, the Republicans would have prevailed based on the data we have, though knowing there are limitations and gaps in the data.
-	
- 2. Ethical Decisions:
+   
+   	3. Ethical Decisions:
     Data Methodology Approach - Our team split Dem and Rep votes based on district lines and proportion of voters in each, so data may be flawed. We unfortunately did not have access to election results by county to have a higher level of accuracy. We essentially took the Total County Population, Split the votes based on the % of population in each district from each county.
 
 # User Driven Interactions:
