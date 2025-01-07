@@ -1,0 +1,77 @@
+
+html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Presidential Results</title>
+
+
+ <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+    <style>
+        h1 {color: darkred;
+            text-align: center;}
+        p {color: darkblue;
+            text-align: center;}
+        body {{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            #margin: 20px;
+        }}
+        .dataframe {{
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+            
+        }}
+        table {{
+            text-align: center;
+            margin: 0 auto;  
+            border-collapse: collapse;
+            width: 100%;
+        }}
+        th, td {{
+            text-align: center;
+        }}
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        iframe {
+            display: block;
+            margin: auto; 
+            width: 80%; 
+            height: 400px; 
+        }
+    </style>
+
+   
+</head>
+<body>
+    <!--Title of HTML Page-->
+    <h1>Historical Presidential Results</h1>
+
+    <!--Descriptive paragraph below title-->
+    <p>This chart displays the Presidential nominees for each party during an election year, inclusive of the year 1868 to present day.<br/>
+        The data shows the election year, state, nominee, and total votes for each nominee at the county level.<br/>
+        The intent of this data is to show county votes each election year, but to also provide the ability to compare these totals to the national electoral college totals to understand if county totals would ever swing an election in our nation's history.
+    </p>
+
+    <!--Image of Presidential Flag-->
+    <img src="united-states-president-seal-1163400_1280.png"
+        width="150" height="150">
+
+    <!--Data Table-->
+    <!--Embed the HTML file -->
+    <iframe src="Historical_Presidential_Table_LimitedView.html" id="iFrame" text-align: center width="1200" height="2000" onload="addComparisonLogic()"></iframe>
+    
+
+
+</body>
+</html>
+""""
