@@ -58,7 +58,7 @@ The html will not run on Git because the GeoJSONs were too large to add to Git.
 	2. Census Data: GeoID mapping to County
 	3. Presidential Precinct Map 2020 -  https://github.com/TheUpshot/presidential-precinct-map-2020
 	4. GeoJSON Coordinates for the district maps:
-a. GeoJSON files across US -  https://data-usdot.opendata.arcgis.com/datasets/usdot::congressional-districts/explore?location=0.131172%2C0.314298%2C1.77&showTable=true
-b. Dave's DRA coordinates/web interface -  https://medium.com/dra-2020/official-maps-90f43c695b4
-c. Census TIGER/Line Shapefiles – most accurate and complete for years needed  https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line- f ile.2024.html#list-tab-790442341  https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2024.html#list-tab-790442341
-![image](https://github.com/user-attachments/assets/9e95d0ff-32a1-44b9-be0f-09755925c89a)
+		a. GeoJSON files across US -  https://data-usdot.opendata.arcgis.com/datasets/usdot::congressional-districts/explore?location=0.131172%2C0.314298%2C1.77&showTable=true
+		b. Dave's DRA coordinates/web interface -  https://medium.com/dra-2020/official-maps-90f43c695b4
+		c. Census TIGER/Line Shapefiles – most accurate and complete for years needed  https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line- f ile.2024.html#list-tab-790442341  https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2024.html#list-tab-790442341
+
